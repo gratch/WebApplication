@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0-*",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+    "dependencies": {
+        "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+        "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+        "Microsoft.AspNet.WebApi.OwinSelfHost": "5.2.3",
+        "Microsoft.Owin.Host.SystemWeb": "3.0.1"
+    },
+
+  "commands": {
+    "web": "Microsoft.AspNet.Server.Kestrel"
+  },
+
+  "frameworks": {
+    "dnx451": {
+        "dependencies": {
+            "Microsoft.AspNet.WebApi.Owin": "5.2.3",
+            "Microsoft.Owin.Diagnostics": "3.0.1",
+            "Microsoft.Owin.Host.HttpListener": "3.0.1",
+            "Microsoft.Owin.Host.SystemWeb": "3.0.1",
+            "Microsoft.Owin.Hosting": "3.0.1",
+            "Owin.Extensions": "0.8.5"
+        }
+    }
+  },
+
+  "exclude": [
+    "wwwroot",
+    "node_modules"
+  ],
+  "publishExclude": [
+    "**.user",
+    "**.vspscc"
+  ]
+}
